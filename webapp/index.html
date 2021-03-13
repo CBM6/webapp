@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='https://api.stackexchange.com/js/2.0/all.js' type='text/javascript'></script>
+    <script type = "text/javascript" src = functions.js>
+    </script>
+    <style>
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+<form>
+    <label for = "search">Search:</label><br>
+    <input type = "text" id = "search" name = "search"><br>
+    <input type = "button" onclick="myfunction()" value="submit">
+</form>
+<p>Results:</p>
+<button class="collapsible" id = "question0">Question1</button>
+<div class="content">
+    <p id = "questionbody0">question body1</p>
+    <p id = "questioncom0">question comments1</p>
+    <p id = "questionans0">question answers1</p>
+</div>
+<button class="collapsible" id = "question1">Question2</button>
+<div class="content">
+    <p id = "questionbody1">question body2</p>
+    <p id = "questioncom1">question comments2</p>
+    <p id = "questionans1">question answers2</p>
+</div>
+<button class="collapsible" id = "question2">Question3</button>
+<div class="content">
+    <p id = "questionbody2">question body3</p>
+    <p id = "questioncom2">question comments3</p>
+    <p id = "questionans2">question answers3</p>
+</div>
+<button class="collapsible" id = "question3">Question4</button>
+<div class="content">
+    <p id = "questionbody3">question body4</p>
+    <p id = "questioncom3">question comments4</p>
+    <p id = "questionans3">question answers4</p>
+</div>
+<button class="collapsible" id = "question4">Question5</button>
+<div class="content">
+    <p id = "questionbody4">question body5</p>
+    <p id = "questioncom4">question comments5</p>
+    <p id = "questionans4">question answers5</p>
+</div>
+<button class="collapsible" id = "question5">Question6</button>
+<div class="content">
+    <p id = "questionbody5">question body6</p>
+    <p id = "questioncom5">question comments6</p>
+    <p id = "questionans5">question answers6</p>
+</div>
+<button class="collapsible" id = "question6">Question7</button>
+<div class="content">
+    <p id = "questionbody6">question body7</p>
+    <p id = "questioncom6">question comments7</p>
+    <p id = "questionans6">question answers7</p>
+</div>
+<button class="collapsible" id = "question7">Question8</button>
+<div class="content">
+    <p id = "questionbody7">question body8</p>
+    <p id = "questioncom7">question comments8</p>
+    <p id = "questionans7">question answers8</p>
+</div>
+<button class="collapsible" id = "question8">Question9</button>
+<div class="content">
+    <p id = "questionbody8">question body9</p>
+    <p id = "questioncom8">question comments9</p>
+    <p id = "questionans8">question answers9</p>
+</div>
+<button class="collapsible" id = "question9">Question10</button>
+<div class="content">
+    <p id = "questionbody9">question body10</p>
+    <p id = "questioncom9">question comments10</p>
+    <p id = "questionans9">question answers10</p>
+</div>
+<button class="collapsible" id = "question10">Question11</button>
+<div class="content">
+    <p id = "questionbody10">question body11</p>
+    <p id = "questioncom10">question comments11</p>
+    <p id = "questionans10">question answers11</p>
+</div>
+<button class="collapsible" id = "question11">Question12</button>
+<div class="content">
+    <p id = "questionbody11">question body12</p>
+    <p id = "questioncom11">question comments12</p>
+    <p id = "questionans11">question answers12</p>
+</div>
+<button class="collapsible" id = "question12">Question13</button>
+<div class="content">
+    <p id = "questionbody12">question body13</p>
+    <p id = "questioncom12">question comments13</p>
+    <p id = "questionans12">question answers13</p>
+</div>
+<button class="collapsible" id = "question13">Question14</button>
+<div class="content">
+    <p id = "questionbody13">question body14</p>
+    <p id = "questioncom13">question comments14</p>
+    <p id = "questionans13">question answers14</p>
+</div>
+<button class="collapsible" id = "question14">Question15</button>
+<div class="content">
+    <p id = "questionbody14">question body15</p>
+    <p id = "questioncom14">question comments15</p>
+    <p id = "questionans14">question answers15</p>
+</div>
+<button class="collapsible" id = "question15">Question16</button>
+<div class="content">
+    <p id = "questionbody15">question body16</p>
+    <p id = "questioncom15">question comments16</p>
+    <p id = "questionans15">question answers16</p>
+</div>
+<button class="collapsible" id = "question16">Question17</button>
+<div class="content">
+    <p id = "questionbody16">question body17</p>
+    <p id = "questioncom16">question comments17</p>
+    <p id = "questionans16">question answers17</p>
+</div>
+<button class="collapsible" id = "question17">Question18</button>
+<div class="content">
+    <p id = "questionbody17">question body18</p>
+    <p id = "questioncom17">question comments18</p>
+    <p id = "questionans17">question answers18</p>
+</div>
+<button class="collapsible" id = "question18">Question19</button>
+<div class="content">
+    <p id = "questionbody18">question body19</p>
+    <p id = "questioncom18">question comments19</p>
+    <p id = "questionans18">question answers19</p>
+</div>
+<button class="collapsible" id = "question19">Question20</button>
+<div class="content">
+    <p id = "questionbody19">question body20</p>
+    <p id = "questioncom19">question comments20</p>
+    <p id = "questionans19">question answers20</p>
+</div>
+<p id="demo">Response Time(in millisec):</p>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</body>
+</html>

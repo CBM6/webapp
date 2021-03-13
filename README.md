@@ -1,5 +1,6 @@
 # webapp
 This is a simple web application. This application will help you find 10 most recent questions and 10 most popular questions from Stack Overflow in a recent week. The questions are arranged by creation date in descending order. The web application is implemented by CSS, html, and JavaScript. The logic is simple. The application will send request to Stack Overflow by using their API to get response. Convert the responses into JSON. Then parse the JSON. Get data and put them into proper position in the application. Creation date and votes always be the bottom of its comments, answers and questions.
+
 Here is docker image link on Docker hub:  https://hub.docker.com/repository/docker/cbmbob/webapp.
 
 Here is Github repo for the source code link: https://github.com/CBM6/webapp
